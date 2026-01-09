@@ -40,7 +40,7 @@ class BookListItem extends StatelessWidget {
                   width: 60,
                   height: 90,
                   fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => Container(
+                  errorBuilder: (_, _, _) => Container(
                     width: 60,
                     height: 90,
                     color: Colors.grey.shade300,

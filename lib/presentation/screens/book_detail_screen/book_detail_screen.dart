@@ -62,7 +62,7 @@ class BookDetailScreen extends StatelessWidget {
               child: Image.network(
                 book.image,
                 height: 220,
-                errorBuilder: (_, __, ___) => Container(
+                errorBuilder: (_, _, _) => Container(
                   height: 220,
                   color: Colors.grey.shade300,
                   child: Image(image: AssetImage('assets/images/noimage.jpg')),

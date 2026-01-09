@@ -8,6 +8,7 @@ class BookListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("Rebuild");
     return Scaffold(
       appBar: AppBar(title: const Text('Book Explorer'), centerTitle: true),
       body: BlocBuilder<BookListBloc, BookListState>(
@@ -54,11 +55,11 @@ class BookListScreen extends StatelessWidget {
                 context.read<BookListBloc>().add(FetchBooks());
               },
               child: ListView.separated(
-                padding: const EdgeInsets.all(12),
+                padding: const .all(12),
                 itemCount: state.books.length,
                 separatorBuilder: (_, _) => const SizedBox(height: 12),
                 itemBuilder: (context, index) {
-                  return BookListItem(book: state.books[index]);
+                  return  BookListItem(book: state.books[index]);
                 },
               ),
             );

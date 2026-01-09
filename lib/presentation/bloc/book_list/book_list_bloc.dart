@@ -13,6 +13,7 @@ class BookListBloc extends Bloc<BookListEvent, BookListState> {
   BookListBloc(this.repository) : super(BookListLoading()) {
     on<FetchBooks>(_onFetchBooks);
     on<UpdateBookFavorite>(_onUpdateFavorite);
+
   }
 
   Future<void> _onFetchBooks(
@@ -55,4 +56,5 @@ class BookListBloc extends Bloc<BookListEvent, BookListState> {
 
     emit(BookListLoaded(updatedBooks));
   }
+  
 }
