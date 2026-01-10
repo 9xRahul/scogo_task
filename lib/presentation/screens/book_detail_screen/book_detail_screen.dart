@@ -51,7 +51,7 @@ class BookDetailScreen extends StatelessWidget {
         ],
       ),
 
-      /// BODY BUILT ONCE (NO REBUILD ON TOGGLE)
+      /// no rebuild on fav toggle
       body: SingleChildScrollView(
         padding: const .all(16),
         child: Column(
